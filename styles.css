@@ -24,6 +24,11 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
+}
+
+h1{
+  letter-spacing: 4px;
 }
 
 h1,
@@ -64,12 +69,14 @@ a {
   color: var(--black);
   font-family: var(--font-family);
   font-weight: 500;
+  letter-spacing: 2px;
 }
 
 .icon {
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 
 nav {
@@ -82,6 +89,8 @@ nav {
   position: sticky;
   top: 0;
   margin: 20px;
+
+  box-shadow: 1px 0px 19px -8px rgba(0,0,0,0.75);
 }
 
 nav > ul {
@@ -139,6 +148,7 @@ main {
   align-items: center;
   width: 90%;
   background-color: var(--content-color);
+  box-shadow: 1px 0px 19px -8px rgba(0,0,0,0.75);
 }
 
 h2 {
@@ -148,6 +158,9 @@ h2 {
   align-items: center;
   justify-content: center;
   background-color: var(--background-color);
+  box-shadow: 1px 0px 19px -8px rgba(0,0,0,0.35);
+  letter-spacing: 3px;
+  border-radius: 12px;
 }
 
 .cat {
@@ -178,6 +191,9 @@ section {
     display: flex;
     flex-direction: column;
   }
+
+
+  
 }
 
 @media (min-width: 401px) and (max-width: 768px) {
@@ -209,13 +225,14 @@ div {
 div > img {
   width: 100%;
   box-shadow: 10px 10px 14px -7px rgba(0, 0, 0, 0.23);
+  border-radius: 20px;
 }
 
 div > p {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
+  width: 80%;
   height: 30px;
   background-color: var(--background-color);
   border-radius: 56px;
@@ -224,7 +241,7 @@ div > p {
 }
 
 .myButton {
-  box-shadow: 0px 1px 0px 0px #276873;
+  box-shadow: 10px 10px 32px -15px rgba(0,0,0,0.98);
   background-color: #282327;
   border-radius: 36px;
   display: inline-block;
@@ -234,10 +251,12 @@ div > p {
   font-size: 12px;
   padding: 11px 15px;
   text-decoration: none;
-  text-shadow: 0px 1px 0px #3d768a;
+  text-align: center;
 }
 .myButton:hover {
-  background-color: #262327;
+  background-color: var(--text-color);
+  
+
 }
 .myButton:active {
   position: relative;
